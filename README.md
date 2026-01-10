@@ -1,12 +1,12 @@
-# Block
+# YawningFace
 
 **The first open-source iOS app blocker with scheduled blocking.**
 
 Block distracting apps during the times that matter most. Set your schedule, pick your apps, and stay focused.
 
-## Why Block?
+## Why YawningFace?
 
-Unlike other app blockers, Block is:
+Unlike other app blockers, YawningFace is:
 
 - **Open Source** - See exactly what the app does. No tracking, no ads, no subscription fees.
 - **Scheduled Blocking** - Set specific time periods (e.g., 9pm-9am) when apps are blocked. Not just "block for 2 hours".

@@ -100,8 +100,8 @@ struct WelcomePage: View {
             }
 
             VStack(spacing: 12) {
-                Text("Block")
-                    .font(.system(size: 42, weight: .bold))
+                Text("YawningFace")
+                    .font(.system(size: 36, weight: .bold))
                     .foregroundColor(normalTextColor)
 
                 Text("Take back your focus")

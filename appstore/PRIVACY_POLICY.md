@@ -1,10 +1,10 @@
-# Privacy Policy for Pact
+# Privacy Policy for YawningFace
 
 *Last updated: [DATE]*
 
 ## Overview
 
-Pact ("the App") is designed to help you stay focused by blocking distracting apps on your iPhone. We take your privacy seriously.
+YawningFace ("the App") is designed to help you stay focused by blocking distracting apps on your iPhone. We take your privacy seriously.
 
 ## Data Collection
 
