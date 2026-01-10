@@ -10,18 +10,13 @@
 
 ## 1. Apple Developer Portal Setup
 
-### Family Controls Entitlement (CRITICAL - Do this first!)
-- [ ] Go to [developer.apple.com](https://developer.apple.com)
-- [ ] Navigate to Certificates, Identifiers & Profiles
-- [ ] Create/edit your App ID
-- [ ] Request Family Controls capability
-- [ ] Wait for Apple approval (can take days/weeks)
-
 ### App ID & Provisioning
-- [ ] Create App ID with your bundle identifier
+- [ ] Create App ID with your bundle identifier (if not already done)
 - [ ] Enable App Groups capability
-- [ ] Enable Family Controls capability (after approval)
+- [ ] Enable Family Controls capability
 - [ ] Create provisioning profile for distribution
+
+> **Note**: Family Controls is available to all developers since iOS 16. No special approval needed - if it works during development, it will work in production.
 
 ---
 
@@ -170,10 +165,10 @@ Answer the questionnaire:
 - [ ] Fix the issue
 - [ ] Reply or submit new build
 - [ ] Common reasons:
-  - Family Controls not approved yet
   - Guideline 2.1: App doesn't work as described
   - Guideline 4.2: Minimum functionality
   - Missing privacy policy
+  - Non-functional buttons/features
 
 ### If Approved
 - [ ] Celebrate! 🎉
@@ -187,13 +182,12 @@ Answer the questionnaire:
 
 | Task | Time |
 |------|------|
-| Family Controls approval | 3-14 days |
 | App icon & screenshots | 1-2 days |
 | App Store Connect setup | 1-2 hours |
 | Build & upload | 30 minutes |
 | Review process | 1-3 days |
 
-**Total: ~1-3 weeks** (mostly waiting for Family Controls)
+**Total: ~2-5 days** (mostly waiting for App Review)
 
 ---
 
