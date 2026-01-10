@@ -1,5 +1,96 @@
 import Foundation
 
+// MARK: - Mock Friend (for UI development)
+
+struct MockFriend: Identifiable {
+    let id = UUID()
+    let name: String
+    let emoji: String
+    let currentStreak: Int
+    let longestStreak: Int
+    let screenTimeMinutes: Int      // e.g., 154 = "2h 34m"
+    let focusHours: Int             // daily blocked hours
+    let blockedAppsCount: Int
+    let schedule: String            // "21:00 - 09:00"
+    let activeDays: [String]        // ["Mon", "Tue", ...]
+    let isStrong: Bool              // maintaining streak vs broke
+
+    var screenTimeFormatted: String {
+        let hours = screenTimeMinutes / 60
+        let mins = screenTimeMinutes % 60
+        if hours > 0 {
+            return "\(hours)h \(mins)m"
+        }
+        return "\(mins)m"
+    }
+
+    var streakText: String {
+        if isStrong {
+            return "Day \(currentStreak) streak"
+        }
+        return "Streak lost"
+    }
+
+    var statusEmoji: String {
+        if currentStreak >= longestStreak && currentStreak > 0 { return "🔥" }
+        if currentStreak > 0 { return "😎" }
+        return "💀"
+    }
+
+    // MARK: - Mock Data Factory
+
+    static let mockFriends: [MockFriend] = [
+        MockFriend(
+            name: "Sarah",
+            emoji: "👩",
+            currentStreak: 12,
+            longestStreak: 12,
+            screenTimeMinutes: 154,
+            focusHours: 8,
+            blockedAppsCount: 15,
+            schedule: "21:00 - 09:00",
+            activeDays: ["Mon", "Tue", "Wed", "Thu", "Fri"],
+            isStrong: true
+        ),
+        MockFriend(
+            name: "Mike",
+            emoji: "🧔",
+            currentStreak: 8,
+            longestStreak: 14,
+            screenTimeMinutes: 72,
+            focusHours: 6,
+            blockedAppsCount: 8,
+            schedule: "22:00 - 07:00",
+            activeDays: ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"],
+            isStrong: true
+        ),
+        MockFriend(
+            name: "Jake",
+            emoji: "👨",
+            currentStreak: 0,
+            longestStreak: 21,
+            screenTimeMinutes: 405,
+            focusHours: 0,
+            blockedAppsCount: 12,
+            schedule: "20:00 - 08:00",
+            activeDays: ["Mon", "Tue", "Wed", "Thu", "Fri"],
+            isStrong: false
+        ),
+        MockFriend(
+            name: "Emma",
+            emoji: "👩‍🦰",
+            currentStreak: 21,
+            longestStreak: 21,
+            screenTimeMinutes: 45,
+            focusHours: 10,
+            blockedAppsCount: 22,
+            schedule: "19:00 - 10:00",
+            activeDays: ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat"],
+            isStrong: true
+        )
+    ]
+}
+
 // MARK: - User Model
 
 struct SocialUser: Identifiable {
