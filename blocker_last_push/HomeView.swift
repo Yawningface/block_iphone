@@ -65,10 +65,29 @@ struct HomeView: View {
                 .padding(.horizontal)
                 .padding(.bottom, 20)
             } else {
-                Button { showScheduleSheet = true } label: {
-                    Text("Set up blocking")
-                        .font(.subheadline)
-                        .foregroundColor(iconColor)
+                // Empty state when no blocking is active
+                VStack(spacing: 12) {
+                    if blockedAppsCount == 0 {
+                        Text("No apps blocked yet")
+                            .font(.headline)
+                            .foregroundColor(normalTextColor)
+                        Text("Set up a schedule to start focusing")
+                            .font(.subheadline)
+                            .foregroundColor(normalTextColor.opacity(0.6))
+                    }
+
+                    Button {
+                        Haptics.medium()
+                        showScheduleSheet = true
+                    } label: {
+                        Text(blockedAppsCount == 0 ? "Get Started" : "Set up blocking")
+                            .font(.headline)
+                            .foregroundColor(.black)
+                            .padding(.horizontal, 32)
+                            .padding(.vertical, 14)
+                            .background(iconColor)
+                            .cornerRadius(25)
+                    }
                 }
                 .padding(.bottom, 20)
             }

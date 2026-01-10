@@ -52,15 +52,27 @@ struct FriendsView: View {
                         }.padding(.horizontal)
                     }
 
-                    // Friends list
-                    VStack(spacing: 12) {
-                        ForEach(filteredFriends) { friend in
-                            NavigationLink(destination: FriendDetailView(friend: friend)) {
-                                FriendCard(friend: friend)
+                    // Friends list or empty state
+                    if friends.isEmpty {
+                        EmptyStateView(
+                            icon: "👥",
+                            title: "No friends yet",
+                            message: "Add friends to stay accountable and see each other's progress",
+                            buttonTitle: "Add Friend",
+                            buttonAction: { showSearch = true }
+                        )
+                        .frame(maxWidth: .infinity)
+                        .padding(.top, 40)
+                    } else {
+                        VStack(spacing: 12) {
+                            ForEach(filteredFriends) { friend in
+                                NavigationLink(destination: FriendDetailView(friend: friend)) {
+                                    FriendCard(friend: friend)
+                                }
+                                .buttonStyle(PlainButtonStyle())
                             }
-                            .buttonStyle(PlainButtonStyle())
-                        }
-                    }.padding(.horizontal)
+                        }.padding(.horizontal)
+                    }
 
                     Spacer()
                 }

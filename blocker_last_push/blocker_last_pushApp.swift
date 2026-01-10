@@ -2,6 +2,7 @@ import SwiftUI
 
 @main
 struct blocker_last_pushApp: App {
+    @AppStorage("hasCompletedOnboarding") private var hasCompletedOnboarding = false
 
     init() {
         if BlockerModel.isEnabled {
@@ -12,7 +13,11 @@ struct blocker_last_pushApp: App {
 
     var body: some Scene {
         WindowGroup {
-            MainTabView()
+            if hasCompletedOnboarding {
+                MainTabView()
+            } else {
+                OnboardingView(hasCompletedOnboarding: $hasCompletedOnboarding)
+            }
         }
     }
 }

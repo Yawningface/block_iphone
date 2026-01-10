@@ -1,4 +1,5 @@
 import SwiftUI
+import UIKit
 
 // MARK: - Colors
 
@@ -48,5 +49,67 @@ struct CardButtonStyle: ButtonStyle {
             .cornerRadius(8)
             .scaleEffect(configuration.isPressed ? 0.95 : 1.0)
             .animation(.easeOut(duration: 0.15), value: configuration.isPressed)
+    }
+}
+
+// MARK: - Empty State View
+
+struct EmptyStateView: View {
+    let icon: String
+    let title: String
+    let message: String
+    var buttonTitle: String? = nil
+    var buttonAction: (() -> Void)? = nil
+
+    var body: some View {
+        VStack(spacing: 16) {
+            Text(icon)
+                .font(.system(size: 60))
+
+            VStack(spacing: 8) {
+                Text(title)
+                    .font(.headline)
+                    .foregroundColor(normalTextColor)
+
+                Text(message)
+                    .font(.subheadline)
+                    .foregroundColor(normalTextColor.opacity(0.6))
+                    .multilineTextAlignment(.center)
+            }
+
+            if let buttonTitle = buttonTitle, let action = buttonAction {
+                Button(action: action) {
+                    Text(buttonTitle)
+                        .font(.subheadline)
+                        .foregroundColor(.black)
+                        .padding(.horizontal, 24)
+                        .padding(.vertical, 12)
+                        .background(iconColor)
+                        .cornerRadius(20)
+                }
+                .padding(.top, 8)
+            }
+        }
+        .padding(40)
+    }
+}
+
+// MARK: - Haptic Feedback
+
+struct Haptics {
+    static func light() {
+        UIImpactFeedbackGenerator(style: .light).impactOccurred()
+    }
+
+    static func medium() {
+        UIImpactFeedbackGenerator(style: .medium).impactOccurred()
+    }
+
+    static func success() {
+        UINotificationFeedbackGenerator().notificationOccurred(.success)
+    }
+
+    static func selection() {
+        UISelectionFeedbackGenerator().selectionChanged()
     }
 }
