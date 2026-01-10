@@ -66,7 +66,7 @@ A hand or stop symbol representing blocking.
 
 ## Adding to Xcode
 
-1. Open `blocker_last_push/Assets.xcassets/AppIcon.appiconset/`
+1. Open `YawningFace/Assets.xcassets/AppIcon.appiconset/`
 2. Drag your 1024x1024 PNG into Xcode
 3. Xcode will use it for all sizes automatically (iOS 17+)
 

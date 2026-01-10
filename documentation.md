@@ -19,9 +19,9 @@ An iOS app that blocks distracting apps using Apple's Screen Time API. Schedule 
 | `group.yawningface.block` | `group.YourTeam.your-app-name` |
 
 **Files to update:**
-- `blocker_last_push/blocker_last_push.entitlements`
+- `YawningFace/YawningFace.entitlements`
 - `DeviceActivityMonitorExtension/DeviceActivityMonitorExtension.entitlements`
-- `blocker_last_push/BlockerModel.swift` (line 18)
+- `YawningFace/BlockerModel.swift` (line 18)
 - `DeviceActivityMonitorExtension/DeviceActivityMonitorExtension.swift` (line 9)
 
 ---
@@ -39,7 +39,7 @@ An iOS app that blocks distracting apps using Apple's Screen Time API. Schedule 
 
 ### Step 1: Add the DeviceActivityMonitor Extension Target
 
-1. Open `blocker_last_push.xcodeproj` in Xcode
+1. Open `YawningFace.xcodeproj` in Xcode
 2. Go to **File > New > Target**
 3. Search for **"Device Activity Monitor Extension"**
 4. Select it and click **Next**
@@ -47,7 +47,7 @@ An iOS app that blocks distracting apps using Apple's Screen Time API. Schedule 
    - **Product Name**: `DeviceActivityMonitorExtension`
    - **Bundle Identifier**: `yawningface.block.DeviceActivityMonitorExtension`
    - **Team**: Select your team
-   - **Embed in Application**: `blocker_last_push`
+   - **Embed in Application**: `YawningFace`
 6. Click **Finish**
 7. If prompted to activate the scheme, click **Activate**
 
@@ -56,7 +56,7 @@ An iOS app that blocks distracting apps using Apple's Screen Time API. Schedule 
 To use the existing files:
 1. Delete the auto-generated files in the new target group
 2. Right-click on the `DeviceActivityMonitorExtension` target in the Project Navigator
-3. Select **Add Files to "blocker_last_push"**
+3. Select **Add Files to "YawningFace"**
 4. Navigate to and select all files in the `DeviceActivityMonitorExtension` folder
 5. Ensure **"DeviceActivityMonitorExtension"** target is checked
 6. Click **Add**
@@ -67,7 +67,7 @@ To use the existing files:
 
 ### Main App Target
 
-1. Select the **blocker_last_push** target
+1. Select the **YawningFace** target
 2. Go to **Signing & Capabilities** tab
 3. Click **+ Capability**
 4. Add **App Groups**
@@ -88,7 +88,7 @@ To use the existing files:
 
 ### Main App Target
 
-1. Select the **blocker_last_push** target
+1. Select the **YawningFace** target
 2. Go to **Signing & Capabilities** tab
 3. Click **+ Capability**
 4. Add **Family Controls**
@@ -111,10 +111,10 @@ Xcode may auto-generate entitlements files. You can either:
 **Option B**: Use the provided entitlements files:
 
 ### Main App
-1. Select **blocker_last_push** target
+1. Select **YawningFace** target
 2. Go to **Build Settings**
 3. Search for "Code Signing Entitlements"
-4. Set to: `blocker_last_push/blocker_last_push.entitlements`
+4. Set to: `YawningFace/YawningFace.entitlements`
 
 ### Extension
 1. Select **DeviceActivityMonitorExtension** target
@@ -148,7 +148,7 @@ Ensure files are in the correct targets:
 
 | File | Main App | Extension |
 |------|----------|-----------|
-| `blocker_last_pushApp.swift` | ✓ | |
+| `YawningFaceApp.swift` | ✓ | |
 | `ContentView.swift` | ✓ | |
 | `BlockerModel.swift` | ✓ | |
 | `ScheduleManager.swift` | ✓ | |

@@ -36,7 +36,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		23F6B4C32F0D59AD00280460 /* blocker_last_push.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = blocker_last_push.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		23F6B4C32F0D59AD00280460 /* YawningFace.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YawningFace.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		23F6B4DA2F0D5CFF00280460 /* DeviceActivityMonitorExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = DeviceActivityMonitorExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		23F6B4DC2F0D5CFF00280460 /* DeviceActivity.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = DeviceActivity.framework; path = System/Library/Frameworks/DeviceActivity.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
@@ -52,9 +52,9 @@
 /* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
-		23F6B4C52F0D59AD00280460 /* blocker_last_push */ = {
+		23F6B4C52F0D59AD00280460 /* YawningFace */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
-			path = blocker_last_push;
+			path = YawningFace;
 			sourceTree = "<group>";
 		};
 		23F6B4DE2F0D5CFF00280460 /* DeviceActivityMonitorExtension */ = {
@@ -89,7 +89,7 @@
 		23F6B4BA2F0D59AD00280460 = {
 			isa = PBXGroup;
 			children = (
-				23F6B4C52F0D59AD00280460 /* blocker_last_push */,
+				23F6B4C52F0D59AD00280460 /* YawningFace */,
 				23F6B4DE2F0D5CFF00280460 /* DeviceActivityMonitorExtension */,
 				23F6B4DB2F0D5CFF00280460 /* Frameworks */,
 				23F6B4C42F0D59AD00280460 /* Products */,
@@ -99,7 +99,7 @@
 		23F6B4C42F0D59AD00280460 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				23F6B4C32F0D59AD00280460 /* blocker_last_push.app */,
+				23F6B4C32F0D59AD00280460 /* YawningFace.app */,
 				23F6B4DA2F0D5CFF00280460 /* DeviceActivityMonitorExtension.appex */,
 			);
 			name = Products;
@@ -116,9 +116,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		23F6B4C22F0D59AD00280460 /* blocker_last_push */ = {
+		23F6B4C22F0D59AD00280460 /* YawningFace */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 23F6B4CE2F0D59AE00280460 /* Build configuration list for PBXNativeTarget "blocker_last_push" */;
+			buildConfigurationList = 23F6B4CE2F0D59AE00280460 /* Build configuration list for PBXNativeTarget "YawningFace" */;
 			buildPhases = (
 				23F6B4BF2F0D59AD00280460 /* Sources */,
 				23F6B4C02F0D59AD00280460 /* Frameworks */,
@@ -131,13 +131,13 @@
 				23F6B4E42F0D5CFF00280460 /* PBXTargetDependency */,
 			);
 			fileSystemSynchronizedGroups = (
-				23F6B4C52F0D59AD00280460 /* blocker_last_push */,
+				23F6B4C52F0D59AD00280460 /* YawningFace */,
 			);
-			name = blocker_last_push;
+			name = YawningFace;
 			packageProductDependencies = (
 			);
-			productName = blocker_last_push;
-			productReference = 23F6B4C32F0D59AD00280460 /* blocker_last_push.app */;
+			productName = YawningFace;
+			productReference = 23F6B4C32F0D59AD00280460 /* YawningFace.app */;
 			productType = "com.apple.product-type.application";
 		};
 		23F6B4D92F0D5CFF00280460 /* DeviceActivityMonitorExtension */ = {
@@ -180,7 +180,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 23F6B4BE2F0D59AD00280460 /* Build configuration list for PBXProject "blocker_last_push" */;
+			buildConfigurationList = 23F6B4BE2F0D59AD00280460 /* Build configuration list for PBXProject "YawningFace" */;
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -194,7 +194,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				23F6B4C22F0D59AD00280460 /* blocker_last_push */,
+				23F6B4C22F0D59AD00280460 /* YawningFace */,
 				23F6B4D92F0D5CFF00280460 /* DeviceActivityMonitorExtension */,
 			);
 		};
@@ -369,15 +369,15 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = blocker_last_push/blocker_last_push.entitlements;
+				CODE_SIGN_ENTITLEMENTS = YawningFace/YawningFace.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 25B5ZT342A;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_CFBundleDisplayName = YawningFace;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = YawningFace;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -386,7 +386,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = yawningface.block;
+				PRODUCT_BUNDLE_IDENTIFIER = "yawningface.block";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRING_CATALOG_GENERATE_SYMBOLS = YES;
 				SWIFT_APPROACHABLE_CONCURRENCY = YES;
@@ -403,15 +403,15 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = blocker_last_push/blocker_last_push.entitlements;
+				CODE_SIGN_ENTITLEMENTS = YawningFace/YawningFace.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 25B5ZT342A;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_CFBundleDisplayName = YawningFace;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = YawningFace;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -420,7 +420,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = yawningface.block;
+				PRODUCT_BUNDLE_IDENTIFIER = "yawningface.block";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRING_CATALOG_GENERATE_SYMBOLS = YES;
 				SWIFT_APPROACHABLE_CONCURRENCY = YES;
@@ -449,7 +449,7 @@
 					"@executable_path/../../Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = yawningface.block.DeviceActivityMonitorExtension;
+				PRODUCT_BUNDLE_IDENTIFIER = "yawningface.block.DeviceActivityMonitorExtension";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				STRING_CATALOG_GENERATE_SYMBOLS = YES;
@@ -478,7 +478,7 @@
 					"@executable_path/../../Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = yawningface.block.DeviceActivityMonitorExtension;
+				PRODUCT_BUNDLE_IDENTIFIER = "yawningface.block.DeviceActivityMonitorExtension";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				STRING_CATALOG_GENERATE_SYMBOLS = YES;
@@ -493,7 +493,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		23F6B4BE2F0D59AD00280460 /* Build configuration list for PBXProject "blocker_last_push" */ = {
+		23F6B4BE2F0D59AD00280460 /* Build configuration list for PBXProject "YawningFace" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				23F6B4CC2F0D59AE00280460 /* Debug */,
@@ -502,7 +502,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		23F6B4CE2F0D59AE00280460 /* Build configuration list for PBXNativeTarget "blocker_last_push" */ = {
+		23F6B4CE2F0D59AE00280460 /* Build configuration list for PBXNativeTarget "YawningFace" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				23F6B4CF2F0D59AE00280460 /* Debug */,

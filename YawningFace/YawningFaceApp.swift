@@ -1,7 +1,7 @@
 import SwiftUI
 
 @main
-struct blocker_last_pushApp: App {
+struct YawningFaceApp: App {
     @AppStorage("hasCompletedOnboarding") private var hasCompletedOnboarding = false
 
     init() {

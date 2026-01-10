@@ -28,7 +28,7 @@
 - [ ] Update App Groups identifier to match
 
 ### Display Name
-- [ ] Change from "blocker_last_push" to "Pact" (or chosen name)
+- [ ] Change from "YawningFace" to "Pact" (or chosen name)
 - [ ] Target → General → Display Name
 
 ### App Icon
