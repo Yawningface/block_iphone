@@ -23,7 +23,7 @@
 ## 2. Xcode Project Setup
 
 ### Bundle Identifier
-- [ ] Change from `YawningFace.blocker-last-push` to your identifier
+- [ ] Change from `yawningface.block` to your identifier
 - [ ] Update in both targets (main app + extension)
 - [ ] Update App Groups identifier to match
 

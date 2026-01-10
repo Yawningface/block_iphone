@@ -15,8 +15,8 @@ An iOS app that blocks distracting apps using Apple's Screen Time API. Schedule 
 
 | Replace | With |
 |---------|------|
-| `YawningFace.blocker-last-push` | `YourTeam.your-app-name` |
-| `group.YawningFace.blocker-last-push` | `group.YourTeam.your-app-name` |
+| `yawningface.block` | `YourTeam.your-app-name` |
+| `group.yawningface.block` | `group.YourTeam.your-app-name` |
 
 **Files to update:**
 - `blocker_last_push/blocker_last_push.entitlements`
@@ -45,7 +45,7 @@ An iOS app that blocks distracting apps using Apple's Screen Time API. Schedule 
 4. Select it and click **Next**
 5. Configure:
    - **Product Name**: `DeviceActivityMonitorExtension`
-   - **Bundle Identifier**: `YawningFace.blocker-last-push.DeviceActivityMonitorExtension`
+   - **Bundle Identifier**: `yawningface.block.DeviceActivityMonitorExtension`
    - **Team**: Select your team
    - **Embed in Application**: `blocker_last_push`
 6. Click **Finish**
@@ -72,7 +72,7 @@ To use the existing files:
 3. Click **+ Capability**
 4. Add **App Groups**
 5. Click the **+** under App Groups
-6. Enter: `group.YawningFace.blocker-last-push`
+6. Enter: `group.yawningface.block`
 
 ### Extension Target
 
@@ -80,7 +80,7 @@ To use the existing files:
 2. Go to **Signing & Capabilities** tab
 3. Click **+ Capability**
 4. Add **App Groups**
-5. Add the same group: `group.YawningFace.blocker-last-push`
+5. Add the same group: `group.yawningface.block`
 
 ---
 
@@ -189,7 +189,7 @@ To check/modify target membership:
 
 ### Blocking not persisting
 - Verify App Groups are configured identically on both targets
-- Check that the group identifier matches exactly: `group.YawningFace.blocker-last-push`
+- Check that the group identifier matches exactly: `group.yawningface.block`
 
 ---
 

@@ -15,7 +15,7 @@ struct TimePeriod: Codable, Identifiable, Equatable {
 
 struct BlockerModel {
 
-    private static let group = UserDefaults(suiteName: "group.YawningFace.blocker-last-push")
+    private static let group = UserDefaults(suiteName: "group.yawningface.block")
 
     // MARK: - App Selection
 

@@ -6,7 +6,7 @@ import FamilyControls
 class DeviceActivityMonitorExtension: DeviceActivityMonitor {
 
     private let store = ManagedSettingsStore()
-    private let group = UserDefaults(suiteName: "group.YawningFace.blocker-last-push")
+    private let group = UserDefaults(suiteName: "group.yawningface.block")
 
     override func intervalDidStart(for activity: DeviceActivityName) {
         super.intervalDidStart(for: activity)
