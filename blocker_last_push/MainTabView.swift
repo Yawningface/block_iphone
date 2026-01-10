@@ -16,11 +16,6 @@ struct MainTabView: View {
                     Label("Blocks", systemImage: "lock.shield.fill")
                 }
 
-            FriendsView()
-                .tabItem {
-                    Label("Friends", systemImage: "person.2.fill")
-                }
-
             ProfileView()
                 .tabItem {
                     Label("Profile", systemImage: "person.fill")
