@@ -207,31 +207,6 @@ struct ProfileView: View {
                             editEmoji = userEmoji
                             showEditProfile = true
                         }
-                        Divider().background(backgroundColor)
-                        actionRow(icon: "square.and.arrow.up", title: "Export My Data") {
-                            // TODO: Export data
-                        }
-                    }
-                    .background(cardColor)
-                    .cornerRadius(12)
-                    .padding(.horizontal)
-                }
-
-                // MARK: - Support Section
-                VStack(alignment: .leading, spacing: 12) {
-                    Text("Support")
-                        .font(.headline)
-                        .foregroundColor(normalTextColor)
-                        .padding(.horizontal)
-
-                    VStack(spacing: 0) {
-                        actionRow(icon: "questionmark.circle", title: "Help & FAQ") {
-                            // TODO: Open help
-                        }
-                        Divider().background(backgroundColor)
-                        actionRow(icon: "envelope", title: "Contact Support") {
-                            // TODO: Contact support
-                        }
                     }
                     .background(cardColor)
                     .cornerRadius(12)
