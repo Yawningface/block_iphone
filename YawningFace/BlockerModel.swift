@@ -33,7 +33,7 @@ struct BlockerModel {
     // MARK: - Schedule Config
 
     static var isEnabled: Bool {
-        get { group?.object(forKey: "enabled") == nil ? true : group!.bool(forKey: "enabled") }
+        get { group?.bool(forKey: "enabled") ?? false }
         set { group?.set(newValue, forKey: "enabled") }
     }
 
