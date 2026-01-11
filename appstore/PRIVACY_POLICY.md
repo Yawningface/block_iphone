@@ -1,6 +1,6 @@
 # Privacy Policy for YawningFace
 
-*Last updated: [DATE]*
+*Last updated: January 11, 2026*
 
 ## Overview
 
@@ -56,7 +56,7 @@ We may update this Privacy Policy from time to time. We will notify you of any c
 
 If you have questions about this Privacy Policy, please contact us at:
 
-[YOUR EMAIL]
+xuban.ceccon@gmail.com
 
 ---
 

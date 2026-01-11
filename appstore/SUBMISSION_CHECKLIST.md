@@ -1,5 +1,15 @@
 # App Store Submission Checklist
 
+## App Links
+
+| Resource | URL |
+|----------|-----|
+| App Store Connect | https://appstoreconnect.apple.com/apps/6757666039/distribution/ios/version/inflight |
+| Apple ID | 6757666039 |
+| Bundle ID | yawningface.block |
+
+---
+
 ## Before You Start
 
 - [ ] Apple Developer Program membership ($99/year)
